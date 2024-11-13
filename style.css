@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom right, #1aec9c, #00188F); /* Gradient background for a vibrant, cool feel */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') center/cover no-repeat fixed;
     color: #ecf0f1; /* Light text for contrast */
     line-height: 1.6;
     font-size: 16px;
@@ -109,7 +109,7 @@ ul {
 
 ul li {
     font-size: 1.2em;
-    color: #fffff;
+    color: #ffffff;
     margin-bottom: 12px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
