@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom right, #1abc9c, #16a085); /* Gradient background for a vibrant, cool feel */
+    background: linear-gradient(to bottom right, #1aec9c, #00188F); /* Gradient background for a vibrant, cool feel */
     color: #ecf0f1; /* Light text for contrast */
     line-height: 1.6;
     font-size: 16px;
@@ -25,7 +25,7 @@ header {
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background for header */
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
     max-width: 900px;
     width: 100%;
 }
@@ -61,13 +61,13 @@ header a:hover {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 8px solid #f39c12;
+    border: 6px solid #f39c12;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 
 .profile-image:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.0); /* Slight zoom effect on hover */
 }
 
 /* Section Styles */
@@ -78,7 +78,7 @@ section {
     max-width: 900px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -99,7 +99,7 @@ section h2 {
 section p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color: #ecf0f1;
+    color: #fffff;
 }
 
 ul {
@@ -109,7 +109,7 @@ ul {
 
 ul li {
     font-size: 1.2em;
-    color: #bdc3c7;
+    color: #fffff;
     margin-bottom: 12px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -169,4 +169,4 @@ button:hover {
     ul li {
         font-size: 1em;
     }
-}
+}  
