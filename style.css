@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f6f9; /* Light gray background for a soft, neutral look */
-    color: #333333; /* Dark charcoal text color for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Very light gray for a clean background */
+    color: #333333; /* Dark text for contrast and readability */
     line-height: 1.6;
     font-size: 16px;
     display: flex;
@@ -17,11 +17,12 @@ body {
 }
 
 header {
-    background-color: #2c3e50; /* Dark blue for header for a professional tone */
-    color: #fff;
-    padding: 60px 20px;
+    background-color: #1a202c; /* Dark slate blue for a more elegant look */
+    color: #ffffff;
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 4px solid #16a085; /* Soft teal accent to bring attention */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-bottom: 3px solid #4f84b6; /* Accent color for section separators */
 }
 
 header h1 {
@@ -37,37 +38,38 @@ header p {
 }
 
 header a {
-    color: #16a085; /* Teal for links to create contrast and engagement */
+    color: #4f84b6; /* Light blue for links */
     text-decoration: none;
     font-weight: 500;
 }
 
 header a:hover {
-    color: #fff; /* Hover effect to reverse link colors */
+    color: #ffffff; /* White on hover for a more interactive effect */
     text-decoration: underline;
 }
 
 /* Section Styles */
 section {
-    background-color: #fff; /* Off-white background for sections to contrast with the page */
+    background-color: #ffffff; /* White background for content areas */
     padding: 40px;
     margin: 20px auto;
     max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for elegance */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
     transform: scale(1.02); /* Slight scale on hover for interactivity */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
 }
 
 h2 {
     font-size: 2em;
-    color: #2c3e50; /* Dark blue color for section titles for emphasis */
+    color: #2a3d4c; /* Dark gray-blue for a professional tone */
     margin-bottom: 20px;
     font-weight: 600;
-    border-bottom: 2px solid #16a085; /* Teal underline for section headers */
+    border-bottom: 3px solid #4f84b6; /* Blue underline for emphasis */
     padding-bottom: 5px;
 }
 
@@ -77,21 +79,21 @@ ul {
 }
 
 ul li {
-    margin: 12px 0;
+    margin: 15px 0;
     font-size: 1.1em;
-    color: #34495e; /* Soft dark blue-gray for list items for a balanced look */
+    color: #4b5563; /* Slightly lighter gray for list items */
 }
 
-/* Job Section */
+/* Job Section Styles */
 .job h3 {
-    font-size: 1.6em;
-    color: #16a085; /* Teal for job titles for consistency with links */
-    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: #4f84b6; /* Teal-blue for job titles */
+    margin-bottom: 8px;
 }
 
 .job p {
-    font-size: 1em;
-    color: #666;
+    font-size: 1.1em;
+    color: #6b7280; /* Medium gray for job descriptions */
 }
 
 .job ul {
@@ -100,37 +102,43 @@ ul li {
 
 .job li {
     font-size: 1em;
-    color: #333;
+    color: #333333; /* Dark text for job responsibilities */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #2c3e50; /* Dark blue for the footer to maintain consistency */
-    color: #fff;
+    background-color: #1a202c; /* Dark background for footer */
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     font-size: 1em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer a {
+    color: #4f84b6; /* Light blue for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Links Styling */
 a {
-    color: #16a085; /* Teal links */
+    color: #4f84b6; /* Blue links throughout the page */
     text-decoration: none;
-    font-weight: 500;
 }
 
 a:hover {
-    color: #fff; /* Hover effect on links */
+    color: #ffffff; /* White links on hover */
     text-decoration: underline;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     header p {
