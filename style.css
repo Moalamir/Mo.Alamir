@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9; /* Light gray background for a soft, neutral look */
+    color: #333333; /* Dark charcoal text color for readability */
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2c3e50; /* Dark blue for header for a professional tone */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #16a085; /* Soft teal accent to bring attention */
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+header a {
+    color: #16a085; /* Teal for links to create contrast and engagement */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: #fff; /* Hover effect to reverse link colors */
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff; /* Off-white background for sections to contrast with the page */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* Slight scale on hover for interactivity */
+}
+
+h2 {
+    font-size: 2em;
+    color: #2c3e50; /* Dark blue color for section titles for emphasis */
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #16a085; /* Teal underline for section headers */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+    font-size: 1.1em;
+    color: #34495e; /* Soft dark blue-gray for list items for a balanced look */
+}
+
+/* Job Section */
+.job h3 {
+    font-size: 1.6em;
+    color: #16a085; /* Teal for job titles for consistency with links */
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 1em;
+    color: #666;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.job li {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Dark blue for the footer to maintain consistency */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Links Styling */
+a {
+    color: #16a085; /* Teal links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #fff; /* Hover effect on links */
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        margin: 15px;
+        padding: 25px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}
