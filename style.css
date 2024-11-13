@@ -7,71 +7,82 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7; /* Light gray background for a clean look */
-    color: #333333; /* Dark text for readability */
+    background: linear-gradient(135deg, #f06, #4a90e2); /* Cool gradient background */
+    color: #ffffff; /* White text for contrast */
     line-height: 1.6;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-attachment: fixed; /* Parallax effect */
 }
 
 /* Header Styles */
 header {
-    background-color: #004e92; /* Bold blue header for a striking visual */
-    color: #fff;
-    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #ffffff;
+    padding: 80px 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid #f39c12; /* Bright yellow accent line */
 }
 
 header h1 {
-    font-size: 3.5em;
-    letter-spacing: 2px;
+    font-size: 4em;
+    letter-spacing: 3px;
     margin-bottom: 10px;
     font-weight: 800;
+    text-transform: uppercase; /* Capitalize for a bold look */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 15px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Shadow to enhance readability */
 }
 
 header a {
-    color: #ffffff;
+    color: #f39c12; /* Bright yellow links */
     text-decoration: none;
     font-weight: 500;
     margin: 0 10px;
+    font-size: 1.2em;
 }
 
 header a:hover {
-    color: #f39c12; /* Gold color for hover effect */
+    color: #ffffff; /* White on hover */
     text-decoration: underline;
 }
 
 /* Section Styles */
 section {
-    background-color: #ffffff; /* White background for content */
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for content */
     padding: 40px;
     margin: 20px auto;
     max-width: 900px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Elegant shadow for contrast */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Cool shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 section:hover {
-    transform: scale(1.03); /* Slight zoom effect on hover */
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    transform: translateY(-10px); /* Hover lift effect */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
 }
 
 h2 {
-    font-size: 2.2em;
-    color: #333333; /* Strong contrast for headers */
+    font-size: 2.4em;
+    color: #333333;
     margin-bottom: 15px;
     font-weight: 600;
-    border-bottom: 3px solid #004e92; /* Blue underline for section titles */
-    padding-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
 }
 
 ul {
@@ -82,20 +93,26 @@ ul {
 ul li {
     margin: 12px 0;
     font-size: 1.1em;
-    color: #444444; /* Slightly lighter gray for list items */
+    color: #444444;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px); /* Slide-in effect for list items */
+    color: #f39c12; /* Yellow on hover */
 }
 
 /* Job Section Styles */
 .job h3 {
-    font-size: 1.6em;
-    color: #f39c12; /* Gold for job titles */
+    font-size: 1.7em;
+    color: #f39c12; /* Bright yellow for job titles */
     margin-bottom: 8px;
     font-weight: 700;
 }
 
 .job p {
     font-size: 1.1em;
-    color: #777777; /* Lighter gray for job descriptions */
+    color: #777777;
 }
 
 .job ul {
@@ -109,33 +126,48 @@ ul li {
 
 /* Footer Styles */
 footer {
-    background-color: #004e92; /* Matching footer with header */
+    background: rgba(0, 0, 0, 0.6); /* Dark footer to match header */
     color: #ffffff;
     text-align: center;
     padding: 20px;
     font-size: 1em;
-    margin-top: auto;
+    position: relative;
+    z-index: 1;
 }
 
 footer a {
-    color: #f39c12; /* Gold for footer links */
+    color: #f39c12;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #ffffff; /* White on hover */
+    color: #ffffff;
     text-decoration: underline;
 }
 
 /* Links Styling */
 a {
-    color: #004e92; /* Blue links throughout the page */
+    color: #f39c12; /* Gold links throughout the page */
     text-decoration: none;
 }
 
 a:hover {
-    color: #f39c12; /* Gold on hover */
+    color: #ffffff;
     text-decoration: underline;
+}
+
+/* Cool Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out; /* Fade in effect for sections */
 }
 
 /* Mobile Responsiveness */
