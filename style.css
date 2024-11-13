@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f06, #4a90e2); /* Cool gradient background */
-    color: #ffffff; /* White text for contrast */
+    color: #000000; /* White text for contrast */
     line-height: 1.6;
     font-size: 16px;
     display: flex;
