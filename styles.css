@@ -1,0 +1,238 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Language Toggle Button Styles */
+.language-toggle {
+    margin-bottom: 20px;
+}
+
+.language-toggle button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.language-toggle button:hover {
+    background-color: #005bb5;
+}
+
+/* Header Section Styles */
+header {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #0078d7;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('background.jpg') center/cover no-repeat fixed;
+    color: #333;
+    line-height: 1.8; /* Improved readability */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    backdrop-filter: brightness(0.9) saturate(1.2);
+    position: relative;
+}
+
+/* Background overlay for better text visibility */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.7;
+}
+
+header a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styles */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #444;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border for better definition */
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #0078d7;
+    border-bottom: 3px solid #0078d7;
+    padding-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+section h2:hover {
+    color: #005bb5;
+}
+
+section p,
+ul {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #0078d7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Transition Effects for Interactive Elements */
+header a,
+.profile-image,
+section h2 {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p,
+    section p,
+    footer p {
+        font-size: 1em;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
