@@ -5,69 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            text-align: center;
-        }
-
-        .language-toggle {
-            margin-bottom: 30px;
-        }
-
-        .language-toggle button {
-            background-color: #fff;
-            color: #1e3c72;
-            border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 5px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .language-toggle button:hover {
-            background-color: #ffcc00;
-            transform: scale(1.05);
-        }
-
-        #welcome {
-            animation: fadeIn 2s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin: 10px 0;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            line-height: 1.5;
-        }
-    </style>
 </head>
 <body>
     <!-- Language Toggle Button -->
@@ -83,16 +20,9 @@
 
         <p>Please select your preferred language to proceed.</p>
         <p>من فضل اختر اللغة المفضلة لديك</p>
+
     </section>
 
-    <script>
-        function setLanguage(lang) {
-            if (lang === 'en') {
-                window.location.href = 'english.html';
-            } else if (lang === 'ar') {
-                window.location.href = 'arabic.html';
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
